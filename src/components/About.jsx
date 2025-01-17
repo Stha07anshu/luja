@@ -2,7 +2,6 @@ import React from 'react';
 import { FaUserAlt, FaLinkedin, FaAutoprefixer, FaPencilRuler, FaDesktop, FaFileCode, FaPaintBrush, FaClipboard, FaUsers } from 'react-icons/fa';
 import Header from './Header';
 import '../styles/About.css';
-import lujaImage from '../asset/images/profile.jpg';
 
 const About = () => {
   return (
