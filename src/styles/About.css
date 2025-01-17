@@ -1,0 +1,274 @@
+/* Styles for the About section */
+.about {
+    padding: 40px;
+    margin-top: 100px; /* Remove any margin-top to avoid space from the previous section */
+}
+
+/* Container for profile image and text */
+/* Main about container layout */
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin: 0 auto;
+  }
+  
+  /* Left Section: About Details */
+  .about-left {
+    flex: 1; /* Takes up available space */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* About details */
+  .about-details {
+    flex: 1;
+  }
+  
+  /* Right Section: Profile Image */
+  .about-right {
+    flex: 0 0 300px; /* Fixed size for the image */
+  }
+  
+  /* Styling the profile image */
+  .about-image-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .about-image {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  /* Social Icon */
+  .social-links {
+    margin-top: 20px;
+  }
+  
+  /* Divider line */
+  .section-divider {
+    margin: 30px 0;
+    border: 0;
+    border-top: 1px solid #ddd;
+  }
+  
+  /* Education, Skills, and Awards */
+  .education, .skills, .awards {
+    margin-top: 40px;
+    scroll-padding-top: 80px; /* Adjust this value to the amount of space you want above when scrolling */
+
+  }
+  
+  .skills-columns {
+    display: flex;
+    gap: 40px;
+  }
+  
+  /* Skills Column */
+  .skills-column ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .skills-column ul li {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+  }
+  
+  .skills-column ul li svg {
+    margin-right: 10px;
+  }
+  
+/* Styling for the greeting text "Hello" */
+.greeting {
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.greeting .icon {
+    margin-right: 10px;  /* Space between the icon and text */
+    color: orange;       /* Icon color */
+}
+
+/* Styling for the name text "I am Luja Maharjan" */
+.name {
+    font-size: 36px;  /* Larger font size for the name */
+    color: orange;    /* Orange color */
+    font-weight: 700;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.name .icon {
+    margin-right: 10px;  /* Space between the icon and text */
+    color: orange;       /* Icon color */
+}
+
+/* Styling for the paragraph text */
+.about-details p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Education Section Styling */
+.education {
+    margin-top: 20px;
+}
+
+/* Education Heading */
+.edu-heading {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Education Item Styling */
+.edu-item {
+    margin-bottom: 20px;
+}
+
+.edu-item h5 {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.edu-item p {
+    margin: 5px 0;
+    font-size: 0.95em;
+    color: #555;
+}
+
+/* Right Section Styling (Skills and Awards) */
+.about-right {
+    flex: 1;
+    margin-bottom: 20px; /* Space between each section */
+}
+
+/* Skills Section */
+/* Skills Section */
+.skills {
+    margin-bottom: 30px;
+}
+
+.skills-heading {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Container for two columns of skills */
+.skills-columns {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Each column for skills */
+.skills-column {
+    flex: 0.48; /* Adjust the width to fit two columns */
+}
+
+/* Styling for Skills List */
+.skills ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills ul li {
+    font-size: 1.1em;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.skills ul li svg {
+    margin-right: 10px; /* Space between icon and skill name */
+    color: #ff7f00; /* Orange color for the icons */
+}
+
+
+/* Awards Section */
+.awards {
+    margin-bottom: 30px;
+}
+
+.awards-heading {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.awards ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.awards ul li {
+    font-size: 1.1em;
+    margin-bottom: 8px;
+}
+
+/* Social Media Links Styling */
+.social-links {
+    margin-top: 20px; /* Adds more space above the icon */
+    justify-content: flex-start; /* Align the icon to the left */
+}
+
+/* Styling the anchor tag for LinkedIn */
+.social-links a {
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.social-links a:hover {
+    color: #005582; /* Darker LinkedIn color on hover */
+}
+
+/* Separator Line Between Sections */
+.section-divider {
+    width: 100%;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+/* Responsive Styling */
+@media screen and (max-width: 768px) {
+    /* On smaller screens, stack the sections */
+    .about-container {
+        flex-direction: column;
+    }
+
+    /* Right section should come below the left section */
+    .about-left {
+        margin-right: 0;
+    }
+
+    /* Education and skills sections should be more compact */
+    .education, .skills, .awards {
+        margin-bottom: 15px;
+    }
+
+    /* Make each column take full width on smaller screens */
+    .skills-columns {
+        flex-direction: column;
+    }
+
+    .skills-column {
+        flex: 1 0 100%; /* Make the columns stack on smaller screens */
+    }
+}

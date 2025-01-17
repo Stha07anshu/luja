@@ -1,0 +1,112 @@
+/* Ensure the container is properly sized */
+
+.projects-title {
+  font-size: 48px; /* Increase the size of the title */
+  font-weight: bold; /* Make the title bold */
+  color: #333; /* Dark grey color for the title text */
+  text-align: start; /* Center the title */
+  margin-top: 40px; /* Add some space from the top */
+  margin-bottom: 80px; /* Add some space below the title */
+  text-transform: uppercase; /* Capitalize the title for a bolder look */
+  letter-spacing: 2px; /* Slightly increase letter spacing for a more refined look */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern sans-serif font */
+  position: relative;
+}
+
+.projects-title::after {
+  content: ""; /* Empty content for the pseudo-element */
+  position: absolute;
+  width: 50px; /* Make the underline short */
+  height: 3px; /* Set the thickness of the underline */
+  background-color: #FF5733; 
+  align-content: start;/* Color of the underline */
+  bottom: -10px; /* Position the underline below the title */
+  transform: translateX(-50%); /* Align the underline perfectly in the center */
+}
+
+/* Responsive typography */
+@media (max-width: 768px) {
+  .projects-title {
+    font-size: 36px; /* Slightly smaller title size on mobile screens */
+    margin-top: 30px; /* Adjust the top margin on smaller screens */
+    margin-bottom: 15px; /* Adjust the bottom margin on smaller screens */
+  }
+}
+
+.project-card .project-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%; /* Make sure the content takes full width */
+  position: relative;
+  overflow: hidden; /* To hide any overflowing content when animated */
+}
+
+.project-card img {
+  max-width: 100%; /* Ensure the image does not exceed its container's width */
+  height: auto; /* Maintain the image's aspect ratio */
+  object-fit: cover; /* Make sure the image covers the container without overflowing */
+  max-height: 400px; /* Limit the height of the image to prevent overflowing vertically */
+  transition: transform 0.3s ease-in-out; /* Smooth transition for the hover effect */
+}
+
+/* Hover animation for the image */
+.project-card img:hover {
+  transform: scale(1.1); /* Scale the image slightly on hover */
+}
+
+/* Add hover animation to the text */
+.project-card .project-description {
+  max-width: 60%; /* Control the width of the text */
+  padding: 20px; /* Add some padding to the text */
+  transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition for both transform and color */
+  color: #333; /* Default text color */
+  font-size: 20px; /* Increase the text size */
+}
+
+/* On hover, move text up and change color */
+.project-card:hover .project-description {
+  transform: translateY(-10px); /* Slightly move the text up */
+  color: #738f9b; /* Change the text color on hover */
+}
+
+/* Add a responsive layout for smaller screens */
+@media (max-width: 768px) {
+  .project-card {
+    flex: 1 1 100%; /* Stack the project cards on top of each other on smaller screens */
+  }
+
+  .project-card .project-content {
+    flex-direction: column; /* Stack the image and text vertically on smaller screens */
+  }
+
+  .project-description {
+    max-width: 100%; /* Allow the text to take full width on smaller screens */
+    font-size: 18px; /* Slightly smaller text on mobile screens */
+  }
+
+  .project-card img {
+    max-height: 300px; /* Reduce the image height for smaller screens */
+  }
+}
+/* PDF Viewer Container */
+.pdf-container {
+  margin-top: 40px;
+  border-top: 2px solid #ddd;
+  padding-top: 20px;
+}
+
+.pdf-container h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+/* Styling the iframe */
+.pdf-container iframe {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  height: 800px; /* Increased height */
+
+}

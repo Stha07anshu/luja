@@ -1,0 +1,31 @@
+.services {
+    background-color: #fff;
+    padding: 50px 20px;
+  }
+  
+  .services h2 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .services-container {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .service {
+    width: 30%;
+    text-align: center;
+  }
+  
+  .service h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .service p {
+    font-size: 16px;
+    color: #777;
+  }
+  
