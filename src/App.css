@@ -17,8 +17,8 @@ body {
 /* Add padding to create space on both sides */
 .main-wrapper {
   max-width: 1200px;  /* You can adjust this value as per your needs */
-  padding-left: 1000px;  /* Left padding */
-  padding-right: 1000px;  /* Right padding */
+  padding-left: 200px;  /* Left padding */
+  padding-right: 200px;  /* Right padding */
   margin: 0 auto;  /* Center the content */
   
 }

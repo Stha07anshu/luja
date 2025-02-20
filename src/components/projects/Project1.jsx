@@ -4,7 +4,6 @@ import "./Project1.css";
 
 // Import images
 import img1 from "../../asset/project1/1.jpg";
-import img2 from "../../asset/project1/20.jpg";
 import img22 from "../../asset/project1/21.jpg";
 import img7 from "../../asset/project1/7.jpg";
 import img8 from "../../asset/project1/8.png";
@@ -16,14 +15,15 @@ import img13 from "../../asset/project1/13.jpg";
 import img17 from "../../asset/project1/17.png";
 import img18 from "../../asset/project1/18.jpg";
 import img19 from "../../asset/project1/3.png";
+import img20 from "../../asset/project1/2.jpg";
 
 // Add all 20 images here
 const images = [
   img1,
   img22,
-  img2,
   img18,
   img7,
+  img20,
   img9,
   img19,
   img8,
