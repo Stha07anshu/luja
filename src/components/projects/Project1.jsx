@@ -1,5 +1,5 @@
 // src/components/Project1.js
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react"; // Removed useState
 import "./Project1.css";
 
 // Import images
@@ -37,8 +37,6 @@ const images = [
 ];
 
 const Project1 = () => {
-  const [visibleImages, setVisibleImages] = useState([]);
-
   // Lazy loading for images as they come into view
   useEffect(() => {
     const handleScroll = () => {
@@ -72,8 +70,9 @@ const Project1 = () => {
     <div className="project1">
       {/* Static Image */}
       <div className="static-image">
-        <img src={img7} alt="Project Image" className="static-image-img" />
-      </div>
+  <img src={img7} alt="" className="static-image-img" />
+</div>
+
 
       {/* Modified Content Layout */}
       <div className="project1-content-new">
@@ -136,8 +135,8 @@ const Project1 = () => {
           <img
             key={index}
             src={image}
-            alt={`Gallery ${index + 1}`}
             className={`gallery-image ${getImageWidthClass(image, index)}`}
+            alt="" // Using alt="" for simplicity.  Consider more descriptive text.
           />
         ))}
       </div>
