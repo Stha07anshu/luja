@@ -86,3 +86,15 @@
 .gallery-image-90 {
   width: 90%; /* Make the image take 90% of the width */
 }
+
+/* Style for the image row */
+.image-row {
+  display: flex; /* Display images in a row */
+  justify-content: space-between; /* Distribute images evenly */
+  width: 90%; /* Match the width of other images */
+  margin-bottom: 80px; /* Add spacing below the row */
+}
+
+.image-in-row {
+  width: 35%; /* Each image takes 30% of the row width */
+}

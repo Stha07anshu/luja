@@ -16,24 +16,22 @@ import img13 from "../../asset/project1/13.jpg";
 import img17 from "../../asset/project1/17.png";
 import img18 from "../../asset/project1/18.jpg";
 import img19 from "../../asset/project1/3.png";
-import img20 from "../../asset/project1/2.jpg";
 
 // Add all 20 images here
 const images = [
   img1,
   img22,
   img2,
+  img18,
   img7,
-  img8,
   img9,
+  img19,
+  img8,
   img10,
   img11,
   img12,
   img13,
   img17,
-  img18,
-  img19,
-  img20,
 ];
 
 const Project1 = () => {
@@ -66,20 +64,27 @@ const Project1 = () => {
     (image) => image !== img1 && image !== img7
   );
 
+  // Group images 19, 8, and 10 into a row
+  const imagesInRow = [img19, img8, img10];
+  const remainingImages = galleryImages.filter(
+    (image) => !imagesInRow.includes(image)
+  );
+
   return (
     <div className="project1">
       {/* Static Image */}
       <div className="static-image">
-  <img src={img7} alt="" className="static-image-img" />
-</div>
-
+        <img src={img7} alt="" className="static-image-img" />
+      </div>
 
       {/* Modified Content Layout */}
       <div className="project1-content-new">
         <div className="project1-text-container">
           <div className="project1-description-container">
             <div className="project1-description">
-              <h1 className="project1-title"> Between Spaces</h1>
+              <h1 className="project1-title">
+                Between Spaces
+              </h1>
               <p>
                 "BETWEEN SPACES" is an affordable and equitable housing project de
                 signed for all age group people coming from low-income and different cul
@@ -131,7 +136,23 @@ const Project1 = () => {
 
       {/* Two-column image gallery */}
       <div className="gallery">
-        {galleryImages.map((image, index) => (
+        {/* Render images in a row */}
+        <div className="image-row">
+          {imagesInRow.map((image, index) => (
+            <img
+              key={index}
+              src={image}
+              className={`gallery-image image-in-row ${getImageWidthClass(
+                image,
+                index
+              )}`}
+              alt="" // Using alt="" for simplicity.  Consider more descriptive text.
+            />
+          ))}
+        </div>
+
+        {/* Render remaining images */}
+        {remainingImages.map((image, index) => (
           <img
             key={index}
             src={image}
