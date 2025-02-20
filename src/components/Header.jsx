@@ -12,11 +12,11 @@ const Header = () => {
           <span className="logo-text-center">Architect + Design</span>
         </div>
         <ul className="nav-list">
-          <li><a href="/">About</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#awards">Awards</a></li>
-          <li><a href="/projects">Works</a></li>
+          <li><a href="/about">About</a></li>
+          {/* <li><a href="#education">Education</a></li>
+          <li><a href="#skills">Skills</a></li> */}
+          <li><a href="/">Works</a></li>
+          <li><a href="#awards">Contact</a></li>
         </ul>
       </nav>
     </header>

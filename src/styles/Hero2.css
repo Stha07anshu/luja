@@ -1,0 +1,26 @@
+/* src/styles/Hero2.css */
+
+.hero2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9; /* Off-white background */
+  }
+  
+  .hero2-container {
+    max-width: 800px; /* Limit the container width */
+    height: auto;
+    width: 100%;
+    padding: 20px;
+    background-color: #ffffff; /* White background */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: center;
+  }
+  
+  .hero2-image {
+    width: 100%; /* Full width inside the container */
+    height: 100%; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: Rounded corners */
+  }
+  

@@ -6,7 +6,7 @@ import Projects from './components/Projects';
 import Footer from './components/Footer';
 import Hero from './components/Hero';
 import './index.css'; // or wherever your global CSS file is located
-import ProductDetail from './components/ProjectDetail';
+import Project1 from './components/projects/Project1';
 
 const App = () => {
   return (
@@ -18,11 +18,12 @@ const App = () => {
           {/* Define the Routes for Home and Projects */}
           <Routes>
             {/* Home Page Route */}
-            <Route path="/" element={<About />} />
+            <Route path="/about" element={<About />} />
             
             {/* Projects Page Route */}
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/product/:id" element={<ProductDetail />} /> {/* Dynamic route for product detail */}
+            <Route path="/" element={<Projects />} />
+            <Route path="/product/:1" element={<Project1 />} />
+
             </Routes>
 
           <Footer />

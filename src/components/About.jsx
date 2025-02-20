@@ -2,19 +2,28 @@ import React from 'react';
 import { FaUserAlt, FaLinkedin, FaAutoprefixer, FaPencilRuler, FaDesktop, FaFileCode, FaPaintBrush, FaClipboard, FaUsers } from 'react-icons/fa';
 import Header from './Header';
 import '../styles/About.css';
+import Hero from './Hero';
+import Hero2 from './Hero2';
 
 const About = () => {
   return (
     <section id="about" className="about">
       <Header />
+      <Hero />
+      <hr className="section-divider" />
+
       <div className="about-container">
         {/* Left Section: About Details */}
         <div className="about-left">
           <div className="about-details">
             <h4 className="name">
-              <FaUserAlt className="icon" />
-              I am Luja Maharjan,
+              Luja Maharjan
+              
             </h4>
+            <h7 className="arci">
+                | Architecture Student |
+              </h7>
+
             <p className="bio-text">
               A creative and passionate architecture student with a profound interest in art and design. With over a year of professional experience, I have independently worked on and managed numerous architecture projects of varying scales, consistently delivering high-quality results that meet client specifications. I am currently pursuing my Master of Architecture from the University of Idaho.
             </p>
@@ -24,7 +33,9 @@ const About = () => {
               </a>
             </div>
           </div>
+          
         </div>
+
 
         {/* Right Section: Profile Image */}
         <div className="about-right">
@@ -33,23 +44,30 @@ const About = () => {
           </div> */}
         </div>
       </div>
+      
+
 
       <hr className="section-divider" />
+      <Hero2 />
+      <hr className="section-divider" />
+
 
       {/* Education Section */}
       <div id="education" className="education">
         <h5 className="edu-heading">Education</h5>
         <div className="edu-item">
-          <h5>Master in Architecture</h5>
-          <p>2023 - Present | University of Idaho, Moscow, Idaho | GPA: 4.00</p>
+          <h5>Master in Architecture|2023 - Present |</h5>
+          <p> University of Idaho, Moscow, Idaho </p>
+          <p>GPA: 4.00 </p>
         </div>
         <div className="edu-item">
-          <h5>Bachelor’s in Architecture</h5>
-          <p>2015 - 2021 | Pokhara University, Nepal Engineering College, Bhaktapur, Nepal | GPA: 3.78</p>
+          <h5>Bachelor’s in Architecture | 2015 - 2021 |</h5>
+          <p> Pokhara University, Nepal Engineering College, Bhaktapur, Nepal </p>
+          <p>GPA: 3.78 </p>
         </div>
         <div className="edu-item">
-          <h5>High School</h5>
-          <p>2013 - 2015 | G.E.M.S Institute of Higher Education, Nepal</p>
+          <h5>High School |2013 - 2015|</h5>
+          <p> G.E.M.S Institute of Higher Education, Nepal</p>
         </div>
       </div>
 

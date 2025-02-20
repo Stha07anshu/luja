@@ -1,36 +1,21 @@
 // src/components/Hero.js
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import '../styles/Hero.css';
 
 // Import images
-import projectImage1 from '../asset/images/2a.jpg';
-
-
-const images = [
-  projectImage1,
-  
-];
+import projectImage1 from '../asset/images/hero1.png';
+import projectImage2 from '../asset/images/hero2.png'; // Add your second image
+import projectImage3 from '../asset/images/hero3.png'; // Add your third image
 
 const Hero = () => {
-  // State to hold the index of the current image
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  // Change the image every 3 seconds
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 3000); // 3000ms = 3 seconds
-
-    return () => clearInterval(interval); // Clear the interval when the component unmounts
-  }, []);
-
   return (
     <section className="hero">
-      <img
-        src={images[currentIndex]}
-        alt="Project Slide"
-        className="hero-image"
-      />
+      <div className="hero-container">
+        {/* Display three images in the container */}
+        <img src={projectImage1} alt="Project Slide 1" className="hero-image" />
+        <img src={projectImage2} alt="Project Slide 2" className="hero-image" />
+        <img src={projectImage3} alt="Project Slide 3" className="hero-image" />
+      </div>
     </section>
   );
 };
